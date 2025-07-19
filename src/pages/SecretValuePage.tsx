@@ -76,7 +76,7 @@ const SecretValuePage: React.FC = () => {
       'Funny Clown':       { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 }, 
       'Punky Boss':        { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
       'Alpha Phoenix':     { 'normal': 300, 'gold': 600, 'rainbow': 1200, 'dark-matter': 1500, 'shiny': 600, 'golden-shiny': 1200, 'rainbow-shiny': 2100, 'dark-matter-shiny': 2350 },
-      'Ice Titan':         { 'normal': 14500, 'gold': 15000, 'rainbow': 15500, 'dark-matter': 16500, 'shiny': Deos not exist, 'golden-shiny': Deos not exist, 'rainbow-shiny': Deos not exist, 'dark-matter-shiny': Deos not exist },
+      'Ice Titan':         { 'normal': 14500, 'gold': 15000, 'rainbow': 15500, 'dark-matter': 16500, 'shiny': 0, 'golden-shiny': 0, 'rainbow-shiny': 0, 'dark-matter-shiny': 0 },
       'Squid VIP':         { 'normal': 50, 'gold': 100, 'rainbow': 200, 'dark-matter': 300, 'shiny': 200, 'golden-shiny': 300, 'rainbow-shiny': 400, 'dark-matter-shiny': 500 },
       'Paramedic Parrot':  { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
       'Nautyros':          { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
