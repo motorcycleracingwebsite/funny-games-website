@@ -17,7 +17,7 @@ const CharmsValuePage: React.FC = () => {
     'Speed': {
       'I': 'https://i.imgur.com/rUUSMrJ.png',
       'II': 'https://i.imgur.com/Q2MzidW.png',
-      'III': 'https://imgur.com/a/uJzgdJF.png',
+      'III': 'https://i.imgur.com/Ebk5XJl.png',
       'IV': 'https://imgur.com/a/uJzgdJF.png',
       'V': 'https://i.imgur.com/KwGXmmT.png'
     },
