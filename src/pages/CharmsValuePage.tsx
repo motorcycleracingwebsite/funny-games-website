@@ -64,12 +64,12 @@ const CharmsValuePage: React.FC = () => {
   const getCharmValue = (charmName: string, type: string) => {
     // Individual charm values - easy to modify manually
     const charmValues: { [key: string]: { [key: string]: number } } = {
-      'Speed I': 200, 'Speed II': 100, 'Speed III': 100, 'Speed IV': 100, 'Speed V': 100,
-      'Win I': 100, 'Win II': 100, 'Win III': 100, 'Win IV': 100, 'Win V': 100,
-      'Shards I': 100, 'Shards II': 100, 'Shards III': 100, 'Shards IV': 100, 'Shards V': 100,
-      'Energy I': 100, 'Energy II': 100, 'Energy III': 100, 'Energy IV': 100, 'Energy V': 100,
-      'Luck I': 100, 'Luck II': 100, 'Luck III': 100, 'Luck IV': 100, 'Luck V': 100,
-      'Hatch Speed I': 100, 'Hatch Speed II': 100, 'Hatch Speed III': 100, 'Hatch Speed IV': 100, 'Hatch Speed V': 100
+      'Speed I':          10, 'Speed II':       25,          'Speed III': 35, 'Speed IV':        50, 'Speed V':         100,
+      'Win I':            10, 'Win II':         25,            'Win III': 35, 'Win IV':          50, 'Win V':           100,
+      'Shards I':         10, 'Shards II':      25,         'Shards III': 35, 'Shards IV':       50, 'Shards V':        100,
+      'Energy I':         10, 'Energy II':      25,         'Energy III': 35, 'Energy IV':       50, 'Energy V':        100,
+      'Luck I':           10, 'Luck II':        25,           'Luck III': 35, 'Luck IV':         50, 'Luck V':          100,
+      'Hatch Speed I':    10, 'Hatch Speed II': 25,    'Hatch Speed III': 35, 'Hatch Speed IV':  50, 'Hatch Speed V':   100
     };
     
     const charmKey = `${charmName} ${type}`;
