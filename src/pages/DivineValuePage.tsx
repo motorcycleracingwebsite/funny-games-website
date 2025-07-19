@@ -35,10 +35,10 @@ const DivineValuePage: React.FC = () => {
   const getPetValue = (petName: string, type: string) => {
     // Individual divine pet values - easy to modify manually
     const petValues: { [key: string]: { [key: string]: number } } = {
-      'Horror Monster': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'BIG-EYE Dominus': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'The Hero Overlord': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Frontman': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 }
+      'Horror Monster':     { 'normal': 2000, 'gold': 4000, 'rainbow': 8000, 'dark-matter': 12000, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
+      'BIG-EYE Dominus':    { 'normal': 3000, 'gold': 6000, 'rainbow': 12000, 'dark-matter': 14000, 'shiny': 6000, 'golden-shiny': 9000, 'rainbow-shiny': 11000, 'dark-matter-shiny': 13000 },
+      'The Hero Overlord':  { 'normal': 1500, 'gold': 3000, 'rainbow': 6000, 'dark-matter': 8000, 'shiny': 3000, 'golden-shiny': 6000, 'rainbow-shiny': 8000, 'dark-matter-shiny': 9500 },
+      'Frontman':           { 'normal': 1000, 'gold': 2000, 'rainbow': 4000, 'dark-matter': 6000, 'shiny': 2000, 'golden-shiny': 4000, 'rainbow-shiny': 6000, 'dark-matter-shiny': 7500 }
     };
     
     return petValues[petName]?.[type] || 100;
