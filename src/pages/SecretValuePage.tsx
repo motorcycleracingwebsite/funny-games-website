@@ -62,25 +62,25 @@ const SecretValuePage: React.FC = () => {
   // Easy to modify prices - all set to 100 tk$ for now
   const getPetValue = (petName: string, type: string) => {
     // Individual pet values - easy to modify manually
-    const petValues: { [key: string]: { [key: string]: number } } = {
-      'Darkwing Overlord': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Mini Pilot': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Speedy Lion': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Cursed Monster': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Divine Blade': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Infernal Tyrant': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Starlight Shark': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Venom': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Officer Fox': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Penny Pop': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Funny Clown': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Punky Boss': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Alpha Phoenix': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Ice Titan': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Squid VIP': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Paramedic Parrot': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Nautyros': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 },
-      'Pixel Tyrant': { 'normal': 100, 'gold': 100, 'rainbow': 100, 'dark-matter': 100, 'shiny': 100, 'golden-shiny': 100, 'rainbow-shiny': 100, 'dark-matter-shiny': 100 }
+  const petValues: { [key: string]: { [key: string]: number } } = {
+      'Darkwing Overlord': { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Mini Pilot':        { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Speedy Lion':       { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Cursed Monster':    { 'normal': 55, 'gold': 85, 'rainbow': 190, 'dark-matter': 240, 'shiny': 190, 'golden-shiny': 250, 'rainbow-shiny': 370, 'dark-matter-shiny': 520 },
+      'Divine Blade':      { 'normal': 300, 'gold': 600, 'rainbow': 1200, 'dark-matter': 1500, 'shiny': 1200, 'golden-shiny': 1500, 'rainbow-shiny': 1900, 'dark-matter-shiny': 2100 },
+      'Infernal Tyrant':   { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Starlight Shark':   { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Venom':             { 'normal': 85, 'gold': 105, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Officer Fox':       { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Penny Pop':         { 'normal': 300, 'gold': 600, 'rainbow': 1200, 'dark-matter': 1500, 'shiny': 1200, 'golden-shiny': 1500, 'rainbow-shiny': 2000, 'dark-matter-shiny': 2250 },
+      'Funny Clown':       { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 }, 
+      'Punky Boss':        { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Alpha Phoenix':     { 'normal': 300, 'gold': 600, 'rainbow': 1200, 'dark-matter': 1500, 'shiny': 600, 'golden-shiny': 1200, 'rainbow-shiny': 2100, 'dark-matter-shiny': 2350 },
+      'Ice Titan':         { 'normal': 14500, 'gold': 15000, 'rainbow': 15500, 'dark-matter': 16500, 'shiny': Deos not exist, 'golden-shiny': Deos not exist, 'rainbow-shiny': Deos not exist, 'dark-matter-shiny': Deos not exist },
+      'Squid VIP':         { 'normal': 50, 'gold': 100, 'rainbow': 200, 'dark-matter': 300, 'shiny': 200, 'golden-shiny': 300, 'rainbow-shiny': 400, 'dark-matter-shiny': 500 },
+      'Paramedic Parrot':  { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Nautyros':          { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Pixel Tyrant':      { 'normal': 85, 'gold': 255, 'rainbow': 425, 'dark-matter': 500, 'shiny': 425, 'golden-shiny': 595, 'rainbow-shiny': 850, 'dark-matter-shiny': 1000 }
     };
     
     return petValues[petName]?.[type] || 100;
