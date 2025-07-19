@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(https://i.imgur.com/mAWyVxR.png)',
+            backgroundImage: 'url(https://i.imgur.com/QOPRPT2.jpeg)',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
