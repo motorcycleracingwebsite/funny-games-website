@@ -63,15 +63,15 @@ const SecretValuePage: React.FC = () => {
   const getPetValue = (petName: string, type: string) => {
     // Individual pet values - easy to modify manually
   const petValues: { [key: string]: { [key: string]: number } } = {
-      'Darkwing Overlord': { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Darkwing Overlord': { 'normal': 55, 'gold': 90, 'rainbow': 190, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
       'Mini Pilot':        { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
       'Speedy Lion':       { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
       'Cursed Monster':    { 'normal': 55, 'gold': 85, 'rainbow': 190, 'dark-matter': 240, 'shiny': 190, 'golden-shiny': 250, 'rainbow-shiny': 370, 'dark-matter-shiny': 520 },
       'Divine Blade':      { 'normal': 300, 'gold': 600, 'rainbow': 1200, 'dark-matter': 1500, 'shiny': 1200, 'golden-shiny': 1500, 'rainbow-shiny': 1900, 'dark-matter-shiny': 2100 },
-      'Infernal Tyrant':   { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Infernal Tyrant':   { 'normal': 60, 'gold': 100, 'rainbow': 210, 'dark-matter': 250, 'shiny': 210, 'golden-shiny': 250, 'rainbow-shiny': 360, 'dark-matter-shiny': 530 },
       'Starlight Shark':   { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
       'Venom':             { 'normal': 85, 'gold': 105, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
-      'Officer Fox':       { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Officer Fox':       { 'normal': 60, 'gold': 85, 'rainbow': 195, 'dark-matter': 240, 'shiny': 200, 'golden-shiny': 260, 'rainbow-shiny': 380, 'dark-matter-shiny': 550 },
       'Penny Pop':         { 'normal': 300, 'gold': 600, 'rainbow': 1200, 'dark-matter': 1500, 'shiny': 1200, 'golden-shiny': 1500, 'rainbow-shiny': 2000, 'dark-matter-shiny': 2250 },
       'Funny Clown':       { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 }, 
       'Punky Boss':        { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
@@ -79,7 +79,7 @@ const SecretValuePage: React.FC = () => {
       'Ice Titan':         { 'normal': 14500, 'gold': 15000, 'rainbow': 15500, 'dark-matter': 16500, 'shiny': 0, 'golden-shiny': 0, 'rainbow-shiny': 0, 'dark-matter-shiny': 0 },
       'Squid VIP':         { 'normal': 50, 'gold': 100, 'rainbow': 200, 'dark-matter': 300, 'shiny': 200, 'golden-shiny': 300, 'rainbow-shiny': 400, 'dark-matter-shiny': 500 },
       'Paramedic Parrot':  { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
-      'Nautyros':          { 'normal': 50, 'gold': 80, 'rainbow': 180, 'dark-matter': 230, 'shiny': 180, 'golden-shiny': 240, 'rainbow-shiny': 360, 'dark-matter-shiny': 500 },
+      'Nautyros':          { 'normal': 65, 'gold': 95, 'rainbow': 180, 'dark-matter': 260, 'shiny': 200, 'golden-shiny': 260, 'rainbow-shiny': 390, 'dark-matter-shiny': 570 },
       'Pixel Tyrant':      { 'normal': 85, 'gold': 255, 'rainbow': 425, 'dark-matter': 500, 'shiny': 425, 'golden-shiny': 595, 'rainbow-shiny': 850, 'dark-matter-shiny': 1000 }
     };
     
