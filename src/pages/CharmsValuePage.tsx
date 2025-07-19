@@ -64,7 +64,7 @@ const CharmsValuePage: React.FC = () => {
   const getCharmValue = (charmName: string, type: string) => {
     // Individual charm values - easy to modify manually
     const charmValues: { [key: string]: { [key: string]: number } } = {
-      'Speed I': 100, 'Speed II': 100, 'Speed III': 100, 'Speed IV': 100, 'Speed V': 100,
+      'Speed I': 200, 'Speed II': 100, 'Speed III': 100, 'Speed IV': 100, 'Speed V': 100,
       'Win I': 100, 'Win II': 100, 'Win III': 100, 'Win IV': 100, 'Win V': 100,
       'Shards I': 100, 'Shards II': 100, 'Shards III': 100, 'Shards IV': 100, 'Shards V': 100,
       'Energy I': 100, 'Energy II': 100, 'Energy III': 100, 'Energy IV': 100, 'Energy V': 100,
