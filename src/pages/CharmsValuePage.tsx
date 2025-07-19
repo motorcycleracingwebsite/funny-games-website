@@ -24,7 +24,7 @@ const CharmsValuePage: React.FC = () => {
     'Win': {
       'I': 'https://i.imgur.com/ZwB3fet.png',
       'II': 'https://i.imgur.com/mQVHqim.png',
-      'III': 'https://i.imgur.com/xa73zOv.png',https://i.imgur.com/xa73zOv.png
+      'III': 'https://i.imgur.com/xa73zOv.png',
       'IV': 'https://i.imgur.com/bmmhxI2.png',
       'V': 'https://i.imgur.com/51jeaT8.png'
     },
