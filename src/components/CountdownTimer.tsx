@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const CountdownTimer: React.FC = () => {
   const [visitData, setVisitData] = useState({
-    current: 24500000,
+    current: 24600000,
     target: 30000000,
     percentage: 80,
     loading: true,
@@ -15,7 +15,7 @@ const CountdownTimer: React.FC = () => {
       setVisitData(prev => ({ ...prev, loading: true, error: false }));
       
       // Try to fetch from API, but use fallback if it fails
-      let visits = 24500000; // Fallback value
+      let visits = 24600000; // Fallback value
       
       try {
         console.log('Attempting to fetch from API...');
