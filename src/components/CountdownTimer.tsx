@@ -14,7 +14,7 @@ const CountdownTimer: React.FC = () => {
     try {
       setVisitData(prev => ({ ...prev, loading: true, error: false }));
 
-      let visits = 29100000; // Fallback value
+      let visits = 29147349; // Fallback value
 
       try {
         console.log('Attempting to fetch from API...');
