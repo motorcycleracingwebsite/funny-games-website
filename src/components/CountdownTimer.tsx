@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const CountdownTimer: React.FC = () => {
   const [visitData, setVisitData] = useState({
-    current: 0,
+    current: 29147349,
     target: 30000000,
     percentage: 0,
     loading: true,
